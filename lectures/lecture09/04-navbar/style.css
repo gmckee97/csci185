@@ -12,6 +12,7 @@ body {
 }
 nav, h1, ul{
     border: solid; 
+}
 nav{
     display: flex;
     justify-content: space-between;

@@ -1,0 +1,21 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: pink;
+}
+
+.grid-container {
+    height: 100vh;
+    /* you will add addition rules for the container here  */
+   display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20% 20%;
+    grid-template-rows: 20% 20% 20% 20% 20% 20%;
+}
+
+/* create your child rules here:  */
+
+div{
+    display: grid;
+    grid-row: 6 / 6;
+}
+
