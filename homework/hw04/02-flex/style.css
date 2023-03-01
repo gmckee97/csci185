@@ -19,7 +19,7 @@ body {
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    background-color: aqua;
+    background-color: brown;
 }
 
 #bio{
@@ -37,7 +37,7 @@ body {
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    background-color: aqua;
+    background-color: coral;
 }
 
 
@@ -47,7 +47,7 @@ body {
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    background-color: aqua;
+    background-color: darkblue;
 }
 
 #section{
@@ -56,7 +56,8 @@ body {
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    background-color: aqua;
+    background-color: darkmagenta;
+
 }
 
 

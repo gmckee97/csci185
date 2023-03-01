@@ -26,8 +26,26 @@ ul{
  list-style-type: none;
  border: solid 1px black;
  margin: 10px;
+
 }
 li{
     border: solid 1px black;
     margin: 10px;
+}
+body {
+    margin: 0;
+}
+
+nav {
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 10px;
+  height: auto;
+}
+
+nav a {
+  color: #f2f2f2;
+  text-decoration: none;
 }

@@ -1,0 +1,97 @@
+@import url(https://fonts.googleapis.com/css?family=Oswald:300,400,700);
+
+body * {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 20vh 20vw;
+}
+
+.section-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.section-container section {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    background: #CCC;
+}
+
+
+#section1 {
+    background: 1s ease-in;
+    color: white;
+    transition: all 3s linear;
+
+
+}
+
+#section1:hover {
+    width: 220px;
+    height: 220px;
+        background: blue;
+        opacity: 0.5;
+        transform: rotate(45deg);
+}
+
+
+
+
+#section2 {
+    background: 0.5s ease-in;
+    color: greenyellow;
+    transition: all 3s linear;
+
+
+ }
+#section2:hover { 
+    width: 220px;
+    height: 220px;
+        background: greenyellow;
+        opacity: 0.9;
+        
+
+
+} 
+
+
+#section3 {
+    background: 0.1s ease-in;
+    color: black;
+    transition: all 3s linear;
+
+ }
+
+#section3:hover {
+    width: 220px;
+    height: 220px;
+        background: rgb(216, 17, 113);
+        opacity: 0.1;
+        transform: rotate(90deg);
+        
+
+ } 
+
+ #section4 a,
+ #section4 a:link {
+     color: blue;
+ }
+ 
+ #section4 a:hover,
+ #section4 a:focus {
+     text-decoration: none;
+ }
+ 
+ #section4 a:active,
+ #section4 a:visited {
+     color: red;
+     text-decoration: none;
+ }
+ 
