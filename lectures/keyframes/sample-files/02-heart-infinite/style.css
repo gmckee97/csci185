@@ -14,13 +14,13 @@ body {
     color: rgb(212, 32, 32);
     animation-duration: 1s;
     animation-name: heartbeat;
-    /* animation-play-state: paused; */
+    animation-play-state: paused; 
 
 }
 
-/* .fa-heart:hover {
+.fa-heart:hover {
     animation-play-state: running;
-} */
+} 
 
 @keyframes heartbeat {
     15% {

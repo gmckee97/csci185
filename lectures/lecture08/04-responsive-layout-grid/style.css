@@ -54,10 +54,7 @@ body {
 .footer {
   grid-column: 1 / 4;
 }
-.main {
-  min-height: 50vh;
-  grid-row: 2 / 4;
-}
+
 
 /*tablet*/
 
@@ -88,9 +85,11 @@ body {
   grid-column: 1 / 2;
 }
 .footer {
-  grid-column: 2 / 2;
+  grid-column: 2 / 3;
   grid-row: 4 / 5;
 }
+
+
 }
 
 

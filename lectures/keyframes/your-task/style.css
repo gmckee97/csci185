@@ -1,0 +1,161 @@
+body {
+    margin: 0;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+}
+
+#mountains {
+    position: absolute;
+    width: 100vw;
+    bottom: 0vh;
+    left: 0;
+    z-index: 100;
+}
+
+#sun {
+    position: absolute;
+    color: #FF3300;
+    bottom: -10vh;
+    left: calc(50vw - 50px); 
+    font-size: 200px;
+
+    animation-timing-function: linear; 
+    animation-fill-mode: forwards; 
+    animation-name: sunrise;
+    animation-delay: 1s;
+    animation-duration: 12s;
+    animation-direction: alternate;
+}
+
+ @keyframes sunrise {
+    0% { 
+        transform: translate(0, 0);
+        color: #FF3300;
+        font-size: 200px;
+    }
+    100% { 
+        transform: translate(0, -70vh); 
+        color: yellow;
+        font-size: 900px;
+    }
+} 
+
+#cloud1 {
+    position: absolute;
+    color: blue;
+    top: 0px;
+    left: -30vw;
+    font-size: 60px;
+    
+    
+    /* Start by positioning the cloud to the left by 30vw */
+    /* transform: translate(-30vw, 0); */
+
+
+    animation-timing-function: linear;
+    animation-iteration-count: infinite; 
+    animation-direction: alternate;
+    animation-name: moveCloudHorizontally;
+    animation-delay: 1s;
+    animation-duration: 18s; 
+}
+
+@keyframes moveCloudHorizontally {
+    0% { 
+        transform: translate(-30vw, 0);
+        color: blue;
+        font-size: 900px;
+    }
+    100% { 
+        transform: translate(110vw, 0); 
+        color: #FF3300;
+        font-size: 10px;
+    }
+}
+
+#cloud2 {
+    position: absolute;
+    color: rgb(0, 255, 8);
+    top: 0px;
+    left: -30vw;
+    font-size: 60px;
+    
+    
+    /* Start by positioning the cloud to the left by 30vw */
+    /* transform: translate(-30vw, 0); */
+
+
+    animation-timing-function: linear;
+    animation-iteration-count: infinite; 
+    animation-direction: alternate;
+    animation-name: dancin;
+    animation-delay: 1s;
+    animation-duration: 5s; 
+}
+
+@keyframes dancin {
+    0% { 
+        transform: translate(-30vw, 0);
+        color: blueviolet;
+        font-size: 10px;
+    }
+    100% { 
+        transform: translate(110vw, 0); 
+        color: rgb(222, 33, 200);
+        font-size: 900px;
+    }
+} 
+#cloud3 {
+    position: absolute;
+    color: rgb(0, 255, 8);
+    top: 0px;
+    left: 90vw;
+    font-size: 60px;
+    
+    
+    /* Start by positioning the cloud to the left by 30vw */
+    /* transform: translate(-30vw, 0); */
+
+
+    animation-timing-function: linear;
+    animation-iteration-count: infinite; 
+    animation-direction: alternate;
+    animation-name: cl3;
+    animation-delay: 1s;
+    animation-duration: 5s; 
+}
+
+@keyframes cl3 {
+    0% { 
+        transform: translate(-30vw, 0);
+        color: blueviolet;
+        font-size: 10px;
+    }
+    100% { 
+        transform: translate(110vw, 0); 
+        color: rgb(222, 33, 200);
+        font-size: 900px;
+    }
+} 
+    
+ 
+#cloud3 {
+    animation-iteration-count: infinite;
+    font-size: 4em;
+    color: rgb(212, 32, 32);
+    animation-duration: 1s;
+    animation-name: cl3;
+    animation-play-state: paused; 
+
+}
+
+.fa-heart:hover {
+    animation-play-state: running;
+} 
+
