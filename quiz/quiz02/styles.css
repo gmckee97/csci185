@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+h1{
+    text-align: center;
+}
+h1, h2, h3{
+    margin-top: 10px;
+    font-family: 'Passion One', cursive;;
+}
+
+
+body * {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header, main, footer {
+    padding-left: 5vw;
+    padding-right: 5vw;
+    padding-top: 5vw;
+    padding-bottom: 5vw;
+    
+}
+
+header {
+    background-color: #013672;
+ 
+}
+
+header img, footer img {
+    width: 200px;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    align-items: left
+    ;
+    justify-content: end;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+.cards { 
+   display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;   /*not sure if I need this or not */
+   
+}
+
+section{
+    display: grid;
+    border: 1px;
+    background-color: white;
+    border-color: black;
+    text-align: left;
+    justify-content: left;
+    border-width: 1px;
+    border-style: solid;
+    column-gap: 10px;
+}
+.cards{
+    grid-row: 2;
+}
+.card-info{
+    grid-row: 2;      
+}
+
+div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .2s ease-in;
+}
+.card-info{
+    display: flex;
+    column-gap: 30px;
+    justify-content: center;
+}
+.card {
+    display: flex;
+    column-gap: 30px;
+    justify-content: center;
+}
+
+.card-info:hover{
+        background: #013672;
+        opacity: 1;
+        color: white;
+}
+.card:hover{
+    background: #013672;
+        opacity: 1;
+        color: white;
+}
+@media screen and (max-width: 800px)  {
+    .cards{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+nav{
+    display: none;
+}
+}

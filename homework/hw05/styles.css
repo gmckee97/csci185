@@ -11,3 +11,131 @@ body {
 }
 
 /* Your CSS Code Here! */
+
+nav a{
+    color: black;
+    text-decoration: none;
+}
+
+
+nav{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin: 0px;
+    padding: 40px;
+
+}
+ul{
+    display: flex;
+    column-gap: 15px;
+    list-style: none;
+}
+header div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+header img{
+    border-radius: 50%;
+}
+
+header{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#about h2{
+        font-family: 'Courier New', Courier, monospace;
+ 
+}
+#about{
+    top: 0;
+    width: 100%;
+    padding: 250px;
+   height: auto;
+}
+
+.project-holder{ 
+       display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 40px;
+        row-gap: 40px;
+        /* padding: 100px; */
+
+    }
+#projects{
+    padding-left: 15vw;
+    padding-right: 15vw;
+}
+h2{
+    font-family: 'Courier New', Courier, monospace;
+}
+.contact-details{ 
+   display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding: 100px;
+}
+
+#contact{
+    padding-left: 250px;
+    padding-right: 80px;
+}
+button {
+    text-decoration: none;
+    color: black;
+    padding: 8px 15px;
+    border: solid 2px black;
+    margin-top: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: inline-block;
+}
+
+footer{
+    text-align: center;
+}
+@media screen and (max-width: 800px) {
+
+    nav {
+      display: flex;
+      justify-content: center;
+    }
+    .project-holder{ 
+       display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 10px;
+        column-gap: 10px;
+    
+    }
+}
+.card img{
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+header{
+    background-color: aquamarine;
+}
+h1{
+    display: flex;
+    justify-content: center;
+
+align-items: center;
+}
