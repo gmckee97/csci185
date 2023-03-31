@@ -10,44 +10,6 @@ function setup() {
         * Draw a car
         * Draw some abstract art
     */
-
-    // https://p5js.org/reference/#/p5/circle
-    fill("teal")
-    circle(300, 200, 200); //x, y, diameter
-
-     // https://p5js.org/reference/#/p5/circle
-     fill("green")
-     circle(425, 180, 200); //x, y, diameter
-   // https://p5js.org/reference/#/p5/circle
-   fill("blue")
-   circle(550, 200, 200); //x, y, diameter
- // https://p5js.org/reference/#/p5/circle
-    fill("red")
-    circle(675, 220, 200); //x, y, diameter
-    // https://p5js.org/reference/#/p5/circle
-    fill("purple")
-    circle(800, 170, 200); //x, y, diameter
-    // https://p5js.org/reference/#/p5/circle
-    fill("white")
-    circle(800, 70, 75); //x, y, diameter
-    // https://p5js.org/reference/#/p5/circle
-    fill("white")
-    circle(850, 70, 75); //x, y, diameter
-     // https://p5js.org/reference/#/p5/circle
-     fill("black")
-     circle(800, 70, 20); //x, y, diameter
-     // https://p5js.org/reference/#/p5/circle
-     fill("black")
-     circle(850, 70, 20); //x, y, diameter
-   
-   
-   
-   
-   
-    // https://p5js.org/reference/#/p5/rect
-    fill('hotpink')
-    rect(800, 200, 75, 13);
-
     // add your drawing here:
     // https://p5js.org/reference/#/p5/point
     // point(110, 20);
@@ -64,8 +26,42 @@ function setup() {
     // Line: https://p5js.org/reference/#/p5/line
     
     // Curve: https://p5js.org/reference/#/p5/curve
-
+    drawCreature();
 
     // for debugging:
     drawGrid(canvasWidth, canvasHeight)
+}
+
+function drawCreature(){
+      // https://p5js.org/reference/#/p5/circle
+      fill("teal")
+      circle(300, 200, 200); //x, y, diameter
+       // https://p5js.org/reference/#/p5/circle
+       fill("green")
+       circle(425, 180, 200); //x, y, diameter
+     // https://p5js.org/reference/#/p5/circle
+     fill("blue")
+     circle(550, 200, 200); //x, y, diameter
+   // https://p5js.org/reference/#/p5/circle
+      fill("red")
+      circle(675, 220, 200); //x, y, diameter
+      // https://p5js.org/reference/#/p5/circle
+      fill("purple")
+      circle(800, 170, 200); //x, y, diameter
+      // https://p5js.org/reference/#/p5/circle
+      fill("white")
+      circle(800, 70, 75); //x, y, diameter
+      // https://p5js.org/reference/#/p5/circle
+      fill("white")
+      circle(850, 70, 75); //x, y, diameter
+       // https://p5js.org/reference/#/p5/circle
+       fill("black")
+       circle(800, 70, 20); //x, y, diameter
+       // https://p5js.org/reference/#/p5/circle
+       fill("black")
+       circle(850, 70, 20); //x, y, diameter
+      // https://p5js.org/reference/#/p5/rect
+      fill('hotpink')
+      rect(800, 200, 75, 13);
+  
 }
