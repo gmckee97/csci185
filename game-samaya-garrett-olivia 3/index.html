@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="main.js"></script>
+    <title>Game</title>
+</head>
+<body>
+    <header>
+        <h1>Escape</h1>
+    </header>
+    <div class="scenes">
+
+        <section id="home" class="show">
+            <p>Created by Olvia, Samaya, Garrett</p>
+            <div>
+                <button onclick="showNext('#home', '#start')">Start</button>
+                
+            </div>
+        </section>
+
+        <section id="start">
+            <h2>You get in a car crash with friends, wake up can't find them. Do you go to the nearby house or into the forest next to the road?</h2>
+            <div>
+                <button onclick="showNext('#start', '#house')">House</button>
+                <button onclick="showNext('#start', '#forest')">Forest</button>
+            </div>
+        </section>
+        
+        <section id="house">
+            <h2>You went left</h2>
+            <p>TODO</p>
+        </section>
+
+        <section id="forest">
+            <h2>You decide that the the house looks too sketchy and you would rather try your luck outside</h2>
+            <p>play it safe and follow the road or look for clues in the woods</p>
+            <div>
+                <button onclick="showNext('#forest', '#road')">Road</button>
+                <button onclick="showNext('#forest', '#woods')">Woods</button>
+            </div>
+        </section>
+
+        <section id="road">
+            <h2>a car pulls up beside you and a stranger offers you a ride. 
+            </h2>
+            <p>do you get in?</p>
+            <div>
+                <button onclick="showNext('#road', '#getin')">get in</button>
+                <button onclick="showNext('#road', '#dontgetin')">dont get in</button>
+            </div>
+        </section>
+
+        <section id="getin">
+            <h2>you get trafficked/killed</h2>
+           
+        </section>
+        
+        
+    </div>
+    
+</body>
+</html>
