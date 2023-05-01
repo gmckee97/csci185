@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Nosifer&display=swap');
+
+
+
+
+/* By default, hide all of the scenes */
+.scenes > section {
+   display: none;
+}
+
+
+/* Only show the section that has a "show" class */
+.scenes > section.show {
+   display: block;
+}
+body {
+background-color: black;
+color: white;
+}
+
+
+header {
+  padding-top: 110px;
+   text-align: center;
+   color: white;
+   transition: all 0.5s ease-out;
+
+
+}
+
+
+header:hover {
+   color: darkred;
+   opacity: 1;
+   font-family: 'Nosifer', cursive;
+
+
+}
+
+
+#start {
+   text-align: center;
+   color: white;
+}
+
+
+#path {
+ 
+}
+
+
+.btn {
+   border: 3px;
+   color: white;
+   background-color: black;
+   border-style: groove;
+   size: 50px;
+}
+
+
+.road {
+background-image: url(gameimages/road1.jpeg);
+background-size: cover;
+height: 100vh;
+display: flex;
+justify-content: center;
+   align-items: center;
+}
+
+
+.roadinner {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 600px;
+   flex-direction: column;
+  
+}
+
+
+#youtube {
+   visibility: hidden;
+   height: 1px;
+   width: 1px;
+   overflow: hidden;
+}
+
+
+/*
+h1{
+   text-align: center;
+}
+h1, h2, h3{
+   margin-top: 5px;
+}
+
+
+
+
+body * {
+   box-sizing: border-box;
+}
+
+
+body {
+   margin: 0;
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+
+nav{
+   display: flex;
+   flex-direction: row;
+   align-items: left
+   ;
+   justify-content: end;
+}
+
+
+section{
+   display: grid;
+   border: 1px;
+   background-color: white;
+   border-color: black;
+   text-align: left;
+   justify-content: left;
+   border-width: 1px;
+   border-style: solid;
+   column-gap: 10px;
+}
+
+
+div {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+
+@media screen and (max-width: 800px)  {
+   .cards{
+       display: grid;
+       grid-template-columns: 1fr;
+       grid-template-rows: auto;
+   }
+nav{
+   display: none;
+}
+}

@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="styles.css">
+   <script src="main.js"></script>
+   <title>Game</title>
+</head>
+
+
+<body>
+
+
+   <div class="scenes">
+
+
+       <section id="start" class="show">
+           <header>
+               <h1>ESCAPE</h1>
+           </header>
+           <img src="https://31.media.tumblr.com/tumblr_mbri3yOfD31ra6x4ko1_500.gif" alt="scary road" />
+
+
+           <h2>can you save your friends...?</h2>
+           <p>created by samaya, olivia, and garrett</p>
+
+
+           <div>
+               <button class="btn" onclick="showNext('#start', '#path', 'https://www.youtube.com/embed/JReH9gCSt-k?autoplay=1')">START</button>
+           </div>
+       </section>
+
+
+       <section id="path">
+           <div class="road">
+               <div class="roadinner">
+
+
+                   <h2>You wake up behind the wheel of your now-totaled vehicle and immediately realize that you are alone.
+                    You didn’t even see the deer before it smashed into the windshield of your car. Honestly, you aren’t even sure it was a deer with how severe the damage seems to be, but the thought of something else that size wandering the surrounding area is too unnerving to think about. The three friends that occupied your passenger and rear seats have all vanished, leaving you the sole commuter on this road to nowhere. (<-- that’s corny as hell and needs a replacement, lmk if yall have one)
+                    Dazed and looking for clues as to where your friends went, you scope your surroundings and notice you are almost entirely surrounded by woods; Save for the road you came in on and what seems to be a cabin in the distance.</h2>
+                   <div>
+                       <button class="btn" onclick="showNext('#path', '#house')">Seek help at the cabin</button>
+                       <button class="btn" onclick="showNext('#path', '#forest')">
+                        Go towards the woods you came from</button>
+                       <!-- <img src="game images/road1.jpeg" />  -->
+
+
+                   </div>
+               </div>
+           </div>
+       </section>
+
+   
+
+
+
+
+       <section id="house">
+           <h2>up or down?
+           </h2>
+           <p>...</p>
+           <div>
+               <button class="btn" onclick="showNext('#house', '#up')">Upstairs</button>
+               <button class="btn" onclick="showNext('#house', '#d')">Downstairs</button>
+           </div>
+       </section>
+
+
+       <section id="up">
+           <h2>which way?
+           </h2>
+           <p>...</p>
+           <div>
+               <button class="btn" onclick="showNext('#up', '#bath')">bathroom</button>
+               <button class="btn" onclick="showNext('#up', '#bed')">bedroom</button>
+           </div>
+       </section>
+
+
+       <section id="bath">
+           <h2>die
+           </h2>
+           <p>...</p>
+       </section>
+
+
+       <section id="bed">
+           <h2>which way?
+           </h2>
+           <p>...</p>
+           <div>
+               <button class="btn" onclick="showNext('#bed', '#clues')">Look for clues</button>
+               <button class="btn" onclick="showNext('#bed', '#road')">Go along road</button>
+           </div>
+       </section>
+     
+       <section id="d">
+        <h2>see light, go towards or run upstairs?
+        </h2>
+        <p>...</p>
+        <div>
+            <button class="btn" onclick="showNext('#d', '#light')">go towards light</button>
+            <button class="btn" onclick="showNext('#d', '#up')">run back upstairs</button>
+        </div>
+    </section>
+
+    <section id="light">
+        <h2>u ded
+        </h2>
+        <p>...</p>
+    </section>
+
+
+      
+    
+    
+    
+    
+    
+    <section id="forest">
+           <h2>Deciding to backtrack, you set off towards the woods.
+            As you walk, you start planning the best corse of action. On one hand: if your friends woke up as dazed as you did, they may have wandered into the woods alone. With night closing in their chances of survival lessen by the minute. By looking for footprints or other signs of life you may be able to find them. On the other hand, if you go out into the woods alone you may not fare any better than them. You could follow the road back and try and find a phone to call for help.</p>
+           <div>
+               <button class="btn" onclick="showNext('#forest', '#road')">
+                Continue along the road</button>
+               <button class="btn" onclick="showNext('#forest', '#clues')">Search the woods</button>
+           </div>
+       </section>
+
+
+      
+       <section id="road">
+           <h2>Bypassing the quickly darkening forest, you decide to stick along the road and see if you can get somewhere with a phone. Mysterious disappearances are for professionals to solve.
+            As you walk along the unusually desolate road you notice a bright light creeping over your shoulder, illuminating the path in front of you. You turn to see a van driving in your direction.
+            The driver seems to notice you too as he slows beside you and rolls down his window. You explain your circumstances and he offers you a ride to a nearby gas station. Do you accept his offer?
+           </h2>
+           <p>do you get in?</p>
+           <div>
+               <button class="btn" onclick="showNext('#road', '#getin')">Accept and get in</button>
+               <button class="btn" onclick="showNext('#road', '#dgetin')">Decline and keep walking</button>
+           </div>
+       </section>
+
+       <section id="dgetin">
+        <h2>After ducking into the foliage and waiting for the van to pass, you continue your trek and eventually come across the promised gas station. You call the police and fill them in on everything about the crash and attempted kidnapping.</h2>
+    </section>
+
+    <section id="getin">
+        <h2>While you were quick to notice the stranger’s kindness, you weren’t as fast to notice his duct tape and machete. You never find out what happened to your friends, and the world never finds out what happened to you.
+            YOU DIED:(</h2>
+    </section>
+
+     
+     
+     
+     
+       <section id="clues">
+           <h2>The thought of your friends dying in the woods is too much to bear. You decide the risk is worth it and head off into the woods.
+            As you walk the woods get progressively darker until your eyes become almost completely useless. When you’re relying on your hearing, the sounds of the woods are magnified tenfold. Crickets chirping, owls hooting, muffled voices, leaves rustling...
+            ...Muffled voices?
+           </h2>
+           <p>do you follow it??</p>
+           <div>
+               <button class="btn" onclick="showNext('#clues', '#talk')">Follow the voices</button>
+               <button class="btn" onclick="showNext('#clues', '#no')">Run away quickly!</button>
+           </div>
+       </section>
+
+
+       <section id="no">
+           <h2>Fearful as to what else is in these woods, you begin running full-speed away from the mumbling. Unable to see in the dark of night, you have to rely on instinct as a navigator; one wrong turn and the woods will swallow you whole.
+           </h2>
+           <p>...</p>
+           <div>
+               <button class="btn" onclick="showNext('#no', '#left')">Left</button>
+               <button class="btn" onclick="showNext('#no', '#right')">Right</button>
+               <button class="btn" onclick="showNext('#no', '#turn')">Turn back towards noise</button>
+           </div>
+       </section>
+      
+      
+      
+      
+       <section id="turn">
+           <h2>which way?
+           </h2>
+           <p>...</p>
+           <div>
+               <button class="btn" onclick="showNext('#turn', '#attack')">bussin</button>
+               <button class="btn" onclick="showNext('#turn', '#sneak')">Sneak in</button>
+           </div>
+       </section>
+
+         
+       <section id="sneak">
+        <h2>attack or wait
+        </h2>
+        <p>...</p>
+        <div>
+            <button class="btn" onclick="showNext('#sneak', '#attack')">attack</button>
+            <button class="btn" onclick="showNext('#sneak', '#wait')">wait</button>
+        </div>
+    </section>
+
+    <section id="wait">
+        <h2>you see your friends captured by a cult.
+        </h2>
+        <p>...</p>
+        <div>
+            <button class="btn" onclick="showNext('#wait', '#listen')">listen to the guy</button>
+            <button class="btn" onclick="showNext('#wait', '#save')">save ya friends</button>
+        </div>
+    </section>
+       
+    <section id="listen">
+        <h2>this guy is spittin. you become indoctrinated.
+        </h2>
+        <p>...</p>
+    </section>
+
+
+       <section id="save">
+           <h2>you all live
+           </h2>
+           <p>...</p>
+       </section>
+
+       <section id="left">
+           <h2>you keep running
+           </h2>
+           <p></p>
+           <div>
+               <button class="btn" onclick="showNext('#left', '#lost')">right</button>
+               <button class="btn" onclick="showNext('#left', '#lost')">left</button>
+           </div>
+       </section>
+
+
+       <section id="right">
+           <h2>you keep running
+           </h2>
+           <p></p>
+           <div>
+               <button class="btn" onclick="showNext('#right', '#lost')">right</button>
+               <button class="btn" onclick="showNext('#right', '#lost')">left</button>
+           </div>
+       </section>
+
+
+       <section id="lost">
+           <h2>you get lost in the woods
+           </h2>
+           <p>...</p>
+       </section>
+
+       <section id="talk">
+           <h2>you see your friends captured by a cult.
+           </h2>
+           <p>...</p>
+           <div>
+               <button class="btn" onclick="showNext('#talk', '#sneak')">sneak in</button>
+               <button class="btn" onclick="showNext('#talk', '#attack')">attack?</button>
+           </div>
+       </section>
+
+    
+
+
+
+       <section id="attack">
+        <h2>die
+        </h2>
+        <p>...</p>
+    </section>
+
+    
+
+
+      
+
+   </div>
+<div id="youtube" >
+
+
+</div>
+
+
+</body>
+
+
+</html>

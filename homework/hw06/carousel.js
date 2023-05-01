@@ -20,6 +20,7 @@ let idx = 0;
 function showImage() {
     console.log('Show image'); 
     document.querySelector('#featured').src=photos[idx];
+    document.querySelector('.caption') .innerHTML = idx;
     //target image
 
     //set source to whatever image is stored in postion idx
@@ -52,7 +53,6 @@ function forward() {
 */
 function back() {
     console.log('back');
-    --idx;
     if (idx===0){
         idx=9 
     }

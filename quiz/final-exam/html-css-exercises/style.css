@@ -1,0 +1,75 @@
+@import url(https://fonts.googleapis.com/css2?family=Tangerine&display=swap);
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #F0F4EF;
+}
+header{
+  background-color: #222222;
+  height: 10vh;
+  padding-left: 10vw;
+  padding-right: 10vw;
+}
+
+h1{
+    color: white;
+    font-size: 1.2em;
+}
+
+nav{
+    color: white;
+    text-decoration: none;
+}
+
+main{
+    padding-left: 10vw;
+    padding-right: 10vw;
+}
+
+
+nav{
+    display: flex;
+    flex-direction: row;
+    align-items: left
+    ;
+    justify-content: end;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+.cards { 
+   display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto;   /*not sure if I need this or not */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    background-color: #222222;
+    color: white;
+}
