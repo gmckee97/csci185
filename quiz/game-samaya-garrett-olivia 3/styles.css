@@ -4,23 +4,25 @@
 
 
 /* By default, hide all of the scenes */
-.scenes > section {
+.scenes>section {
    display: none;
 }
 
 
 /* Only show the section that has a "show" class */
-.scenes > section.show {
+.scenes>section.show {
    display: block;
 }
+
+
 body {
-background-color: black;
-color: white;
+   background-color: black;
+   color: white;
 }
 
 
 header {
-  padding-top: 110px;
+   padding-top: 110px;
    text-align: center;
    color: white;
    transition: all 0.5s ease-out;
@@ -44,9 +46,7 @@ header:hover {
 }
 
 
-#path {
- 
-}
+#path {}
 
 
 .btn {
@@ -55,15 +55,16 @@ header:hover {
    background-color: black;
    border-style: groove;
    size: 50px;
+   align-items: center;
 }
 
 
 .road {
-background-image: url(gameimages/road1.jpeg);
-background-size: cover;
-height: 100vh;
-display: flex;
-justify-content: center;
+   background-image: url(gameimages/road1.jpeg);
+   background-size: cover;
+   height: 100vh;
+   display: flex;
+   justify-content: center;
    align-items: center;
 }
 
@@ -74,8 +75,203 @@ justify-content: center;
    align-items: center;
    width: 600px;
    flex-direction: column;
+
+
+}
+
+
+.houseroute {
+   background-image: url(gameimages/house1.jpeg);
+   background-size: cover;
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
   
 }
+
+
+.uproute {
+   background-image: url(gameimages/upstairs2.jpeg);
+   background-size: cover;
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+
+.bedroute {
+   background-image: url(gameimages/bedroom.jpeg);
+   background-size: cover;
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+
+.forrestroute {
+   background-image: url(gameimages/woods1.webp);
+   background-size: cover;
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+
+.carroute {
+   background-image: url(gameimages/road2.jpeg);
+   background-size: cover;
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+
+.cluesroute {
+   background-image: url(gameimages/woods2.jpeg);
+   background-size: cover;
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+
+.noroute {
+   background-image: url(gameimages/woods3.jpeg);
+   background-size: cover;
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+
+.turnroute {
+   background-image: url(gameimages/woods4.jpeg);
+   background-size: cover;
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+
+.talkroute {
+   background-image: url(gameimages/woodscult.jpeg);
+   background-size: cover;
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+
+.dgroute {
+   background-image: url(gameimages/gas\ station.jpeg);
+   background-size: cover;
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+
+.leftroute {
+   background-image: url(gameimages/woods5.jpeg);
+   background-size: cover;
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+
+.rightroute {
+   background-image: url(gameimages/woods6.jpeg);
+   background-size: cover;
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+
+.lostroute {
+   background-image: url(gameimages/woodsfigure1.jpeg);
+   background-size: cover;
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+
+.downroute {
+   background-image: url(gameimages/basement.jpeg);
+   background-size: cover;
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+
+.down2route {
+   background-image: url(gameimages/basement2.jpeg);
+   background-size: cover;
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+
+.updroute {
+   background-image: url(gameimages/house1.jpeg);
+   background-size: cover;
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+
+.bathroute {
+   background: url(https://akns-images.eonline.com/eol_images/Entire_Site/2021111/rs_1024x759-210211152235-1024-silence-of-the-lambs-hole.jpg?fit=around%7C1024:759&output-quality=90&crop=1024:759;center,top);
+   background-size: cover;
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+
+.getinroute {
+   background-size: cover;
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center; 
+   padding-left: 50px;
+   padding-right: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 #youtube {
@@ -83,67 +279,4 @@ justify-content: center;
    height: 1px;
    width: 1px;
    overflow: hidden;
-}
-
-
-/*
-h1{
-   text-align: center;
-}
-h1, h2, h3{
-   margin-top: 5px;
-}
-
-
-
-
-body * {
-   box-sizing: border-box;
-}
-
-
-body {
-   margin: 0;
-   font-family: Arial, Helvetica, sans-serif;
-}
-
-
-nav{
-   display: flex;
-   flex-direction: row;
-   align-items: left
-   ;
-   justify-content: end;
-}
-
-
-section{
-   display: grid;
-   border: 1px;
-   background-color: white;
-   border-color: black;
-   text-align: left;
-   justify-content: left;
-   border-width: 1px;
-   border-style: solid;
-   column-gap: 10px;
-}
-
-
-div {
-   display: flex;
-   justify-content: center;
-   align-items: center;
-}
-
-
-@media screen and (max-width: 800px)  {
-   .cards{
-       display: grid;
-       grid-template-columns: 1fr;
-       grid-template-rows: auto;
-   }
-nav{
-   display: none;
-}
 }
